@@ -147,6 +147,8 @@ export function formatTimeWithUnit(value: Value, unit: DatetimeUnit, options: Fo
     }
 
     switch (unit) {
+        case "minute":
+            return m.format("HH:mm ");
         case "hour": // 12 AM - January 1, 2015
             return formatMajorMinor(m.format("h A"), m.format("MMMM D, YYYY"), options);
         case "day": // January 1, 2015

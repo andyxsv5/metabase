@@ -82,7 +82,7 @@
 
 
 (def ^:private ^:const query-type->default-query
-  (let [defaults {:intervals   ["1900-01-01/2100-01-01"]
+  (let [defaults {:intervals   ["2017-11-01/2017-11-01"]
                   :granularity :all
                   :context     {:timeout 60000}}]
     {::select             (merge defaults {:queryType  :select
